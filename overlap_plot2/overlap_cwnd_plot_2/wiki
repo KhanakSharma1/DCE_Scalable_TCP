@@ -1,0 +1,12 @@
+// here data rate of router is set to 1Mbps and delay to 0.00075
+// data rate at nodes is 10Mbps 
+// Create the point-to-point link helpers
+  PointToPointHelper pointToPointRouter;
+  pointToPointRouter.SetDeviceAttribute  ("DataRate", StringValue ("1Mbps"));
+  pointToPointRouter.SetChannelAttribute ("Delay", StringValue ("0.00075ms"));
+  NetDeviceContainer r1r2ND = pointToPointRouter.Install (routers.Get (0), routers.Get (1));
+
+  std::vector <NetDeviceContainer> leftToRouter;
+  std::vector <NetDeviceContainer> routerToRight;
+  PointToPointHelper pointToPointLeaf;
+  pointToPointLeaf.SetDeviceAttribute    ("DataRate", StringValue ("10Mbps"));
