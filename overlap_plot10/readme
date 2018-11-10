@@ -1,0 +1,6 @@
+node to router = 1024mbps
+router to router = 2457mbps
+sack is enabled
+dsack and fack are disabled
+queue size = 512 packets
+delay = 120ms

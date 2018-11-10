@@ -1,0 +1,5 @@
+node to router = 1024mbps
+router to router = 2457mbps
+delay = 120ms
+dsack, fack, sack all disabled
+q size = 2048p
