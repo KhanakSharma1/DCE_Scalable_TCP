@@ -1,0 +1,4 @@
+
+bandwidth between router and between node-router = 100mbps
+ran simulation for 100s
+q size = 100p
