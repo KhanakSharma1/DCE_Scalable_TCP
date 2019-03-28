@@ -1,0 +1,9 @@
+node to router = 1024mbps
+router to router = 2457mbps
+delay = 120ms
+dsack, fack, sack all disabled
+q size = 2048p
+
+For some reason(which i was unable to figure out) the queue plotme 
+showed that no queue was being generated but for the linux cwnd there
+were packet drops seen in the graph.
